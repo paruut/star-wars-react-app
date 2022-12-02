@@ -1,0 +1,877 @@
+:root {
+  /* fonts  */
+
+  --lato: "lato";
+  --inter: "inter";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background: #d9d9d9;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.background {
+  width: 70%;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 1.5rem;
+}
+
+nav p {
+  font-family: var(--lato);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.register-btn {
+  width: 236px;
+  height: 90px;
+  border: none;
+  background: #40483a;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+
+.register-btn span {
+  font-family: var(--lato);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  -webkit-text-stroke: 1px rgba(217, 217, 217, 1);
+  color: #ffffff;
+  text-align: left;
+}
+
+/* section */
+
+.section-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+section {
+  height: 700px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-icons h1 {
+  padding-right: 2.3rem;
+}
+
+.section-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  width: 450px;
+  justify-content: flex-end;
+}
+
+.section-background {
+  background: url("https://picsum.photos/534/383");
+  width: 500px;
+  height: 360px;
+  border-radius: 200px 20px 100px 50px;
+}
+
+.section-content {
+  width: 680px;
+  height: 800px;
+  padding: 1rem 1rem 3rem 4rem;
+  background: rgba(54, 44, 44, 0.39);
+  border-radius: 500px 60px 300px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  box-shadow: 10px 4px 4px rgb(0 0 0 / 75%);
+}
+
+.profiles-btn {
+  background: #35660e;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.profiles-btn span {
+  font-family: var(--lato);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  -webkit-text-stroke: 1px rgba(217, 217, 217, 1);
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-content h1 {
+  margin: 0;
+  font-family: var(--inter);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 61px;
+  color: #000000;
+}
+
+.section-content p {
+  margin: 0 auto;
+  font-family: var(--inter);
+  font-style: italic;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  width: 360px;
+}
+
+/* form */
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 600px;
+}
+
+.form-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 700px;
+  align-items: flex-end;
+}
+
+.form-title p {
+  text-transform: uppercase;
+  font-family: var(--inter);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  color: #000000;
+}
+
+.form-title hr {
+  width: 166px;
+  height: 10px;
+  background: #071594;
+  padding: 0;
+  margin: 0 0 4em 0;
+  text-align: right;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  padding: 0.2rem 0 0.2rem 0;
+  margin-bottom: 1.1rem;
+}
+
+.form-flex input {
+  padding: 0 0 0.4rem 0.3rem;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.form-checkbox input {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+}
+
+form input {
+  width: 700px;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size: 25px;
+  margin: 0.2rem 0;
+  font-family: var(--lato);
+}
+
+form label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.btn-save {
+  width: 200px;
+  height: 55px;
+  background: #071594;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-save span {
+  font-family: var(--lato);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  -webkit-text-stroke: 1px rgba(217, 217, 217, 1);
+  color: #ffffff;
+  text-align: left;
+}
+
+/* form validation */
+
+p.validation-msg {
+  text-align: right;
+  font-family: var(--inter);
+  font-style: italic;
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  color: #ff0000;
+}
+
+p.checkbox-msg {
+  font-family: var(--inter);
+  font-style: italic;
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  color: #ff0000;
+}
+
+.form-flex input[type="email"]:focus:invalid {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.form-flex input[type="tel"]:focus:invalid {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.form-checkbox input[type="checkbox"]:invalid {
+  -webkit-moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-o-appearance: none;
+  border: 3px solid red;
+  border-radius: 5px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1300px) {
+  .section-content {
+    width: 500px;
+    height: 600px;
+  }
+  .section-background {
+    width: 400px;
+    height: 400px;
+  }
+  .section-icons {
+    width: 300px;
+  }
+
+  .section-content h1 {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 1rem;
+  }
+  .section-content p {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .section-content {
+    width: 400px;
+    height: 500px;
+  }
+
+  .section-background {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-content h1 {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .section-icons {
+    width: 260px;
+  }
+
+  .section-icons img {
+    width: 40px;
+  }
+
+  .section-content p {
+    width: 350px;
+  }
+
+  .register-btn {
+    width: 180px;
+    height: 60px;
+  }
+
+  .register-btn span {
+    font-size: 20px;
+  }
+
+  nav p {
+    font-size: 25px;
+  }
+
+  .profiles-btn {
+    width: 180px;
+    height: 60px;
+  }
+
+  .profiles-btn span {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .section-content {
+    width: 300px;
+    height: 400px;
+  }
+
+  .section-background {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-icons h1 {
+    padding-right: 1rem;
+  }
+
+  .section-icons {
+    width: 220px;
+  }
+
+  .section-content h1 {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .section-content p {
+    width: 330px;
+  }
+
+  .register-btn {
+    width: 120px;
+    height: 55px;
+    padding-left: 1.8rem;
+  }
+
+  .register-btn span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  nav p {
+    font-size: 20px;
+  }
+
+  .profiles-btn {
+    width: 120px;
+    height: 55px;
+  }
+
+  .profiles-btn span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-content {
+    width: 250px;
+    height: 350px;
+  }
+
+  .section-background {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-icons {
+    width: 180px;
+  }
+
+  .section-content h1 {
+    font-size: 25px;
+    line-height: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .section-content p {
+    width: 250px;
+  }
+
+  .register-btn {
+    width: 100px;
+    height: 50px;
+    padding-left: 1.4rem;
+  }
+
+  .register-btn span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  nav p {
+    font-size: 18px;
+  }
+
+  .section-icons img {
+    width: 30px;
+  }
+
+  .profiles-btn {
+    width: 100px;
+    height: 50px;
+  }
+
+  .profiles-btn span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .section-content {
+    width: 200px;
+    height: 300px;
+  }
+
+  .section-background {
+    width: 180px;
+    height: 160px;
+  }
+
+  .section-icons {
+    width: 140px;
+    padding-top: 0;
+  }
+
+  .section-content h1 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .section-content p {
+    width: 200px;
+  }
+
+  .register-btn {
+    width: 80px;
+    height: 45px;
+    padding-left: 1rem;
+  }
+
+  .register-btn span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  nav p {
+    font-size: 16px;
+  }
+
+  .section-icons img {
+    width: 25px;
+  }
+
+  .profiles-btn {
+    width: 80px;
+    height: 45px;
+  }
+
+  .profiles-btn span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-content {
+    width: 150px;
+    height: 250px;
+    padding: 3rem 2rem 3rem 3rem;
+  }
+
+  .section-background {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-icons {
+    width: 140px;
+    padding-top: 0;
+  }
+
+  .section-content h1 {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .section-content p {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  .register-btn {
+    width: 80px;
+    height: 45px;
+    padding-left: 1rem;
+  }
+
+  .register-btn span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  nav p {
+    font-size: 16px;
+  }
+
+  .section-icons img {
+    width: 20px;
+  }
+
+  .section-icons h1 {
+    padding-right: 0.4rem;
+  }
+
+  .profiles-btn {
+    width: 80px;
+    height: 45px;
+  }
+
+  .profiles-btn span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .section-content {
+    width: 120px;
+    height: 250px;
+    padding: 3rem 2rem 3rem 3rem;
+  }
+
+  .section-background {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-icons {
+    width: 140px;
+    padding-top: 0;
+  }
+
+  .section-content h1 {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .section-content p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .register-btn {
+    width: 80px;
+    height: 45px;
+    padding-left: 1rem;
+  }
+
+  .register-btn span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  nav p {
+    font-size: 16px;
+  }
+
+  .section-icons img {
+    width: 20px;
+  }
+
+  .section-icons h1 {
+    padding-right: 0.4rem;
+  }
+
+  .profiles-btn {
+    width: 80px;
+    height: 45px;
+  }
+
+  .profiles-btn span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* form responsive */
+
+@media only screen and (max-width: 1030px) {
+  .form-title,
+  form input,
+  .form-checkbox {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .form-title,
+  form input,
+  .form-checkbox {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .form-title,
+  form input,
+  .form-checkbox {
+    width: 400px;
+  }
+
+  .btn-save {
+    width: 150px;
+    height: 50px;
+  }
+
+  .btn-save span {
+    font-size: 26px;
+    line-height: 20px;
+  }
+
+  .form-checkbox input {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+  }
+
+  p.validation-msg {
+    font-size: 18px;
+    line-height: 15px;
+  }
+
+  p.checkbox-msg {
+    font-size: 18px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-title,
+  form input,
+  .form-checkbox {
+    width: 300px;
+  }
+
+  .btn-save {
+    width: 150px;
+    height: 50px;
+  }
+
+  .form-checkbox input {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+  }
+
+  .form-flex input {
+    font-size: 20px;
+  }
+
+  p.validation-msg {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  p.checkbox-msg {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .form-title,
+  form input,
+  .form-checkbox {
+    width: 200px;
+  }
+
+  .btn-save {
+    width: 120px;
+    height: 40px;
+  }
+
+  .form-title p,
+  form label {
+    font-size: 16px;
+  }
+
+  .btn-save span {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .form-checkbox input {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+  }
+
+  p.validation-msg {
+    font-size: 11px;
+    line-height: 10px;
+  }
+
+  p.checkbox-msg {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+/* landscape */
+
+@media only screen and (max-width: 915px) and (orientation: landscape) {
+  .section {
+    height: 350px;
+  }
+
+  .section-page {
+    margin-top: 0;
+  }
+  .section-content {
+    width: 250px;
+    height: 180px;
+    margin-top: 8rem;
+    padding: 1rem 1rem 2rem 5rem;
+  }
+  .section-background {
+    width: 200px;
+    height: 150px;
+  }
+  .profiles-btn {
+    width: 100px;
+    height: 30px;
+  }
+  .profiles-btn span {
+    font-size: 14px;
+  }
+
+  .section-icons {
+    width: 180px;
+  }
+  .section-icons img {
+    width: 20px;
+  }
+
+  .section-content h1 {
+    font-size: 20px;
+    line-height: 17px;
+    padding: 0.2rem 2rem 0.2rem 0;
+  }
+
+  .section-content p {
+    font-size: 14px;
+  }
+
+  .register-btn {
+    width: 100px;
+    height: 30px;
+    padding-left: 1.1rem;
+  }
+  .register-btn span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  nav {
+    padding: 0.2rem 1rem;
+  }
+  nav p {
+    font-size: 14px;
+  }
+
+  .section-page {
+    height: 400px;
+  }
+}
