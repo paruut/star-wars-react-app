@@ -73,7 +73,7 @@ const Form = () => {
             Accept: "application/json",
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(localStorage.getItem("character")),
+          body: JSON.parse(localStorage.getItem("character")),
         });
       } catch (error) {
         throw error;
@@ -115,7 +115,7 @@ const Form = () => {
           value={number}
           id="number"
           minLength="9"
-          onKeyPress={(e) => {
+          onKeyDown={(e) => {
             if (!/[0-9]/.test(e.key)) {
               e.preventDefault();
             }

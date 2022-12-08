@@ -1,14 +1,14 @@
 import * as React from "react";
 import Pages from "./pages/Pages";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="container">
       <div className="background">
-        <BrowserRouter>
+        <HashRouter>
           <Pages />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </div>
   );
